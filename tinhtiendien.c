@@ -47,9 +47,9 @@ void tinh_tiendien(){
 	printf("Tien dien Baby: %.2f\n", tiendienbb);
 	printf("Tien dien Hung den: %.2f\n", tiendienhd);
 	printf("\n");
-	printf("Tong tien nha Mai Hung: %.2f\n", tiendienmh + 1500000 + 200000);
-	printf("Tong tien nha Baby: %.2f\n", tiendienbb + 1500000 + 200000);
-	printf("Tong tien nha Hung den: %.2f\n", tiendienhd + 1500000 + 200000);
+	printf("Tong tien nha Mai Hung: %.2f\n", tiendienmh + 1400000 + 200000);
+	printf("Tong tien nha Baby: %.2f\n", tiendienbb + 1400000 + 200000);
+	printf("Tong tien nha Hung den: %.2f\n", tiendienhd + 1400000 + 200000);
 }
 
 void xuat(){
