@@ -62,9 +62,9 @@ void xuat(){
 	printf("Baby: ", ngaybb); scanf("%d", &ngaybb);
 	printf("Hung den: ", ngayhd); scanf("%d", &ngayhd);
 }
-main(){
+int main(){
 
 	xuat();
 	tinh_tiendien();
-	getch();
+	return 0;
 	}
