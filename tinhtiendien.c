@@ -68,14 +68,20 @@ void nhap(){
 	tongtiendien = sodien * 3500;
 	printf("Tong tien dien phai dong: %g VND\n", tongtiendien);
 	printf("Nhap so ngay o: \n");
-	printf("Mai Hung: ", ngaymh); scanf("%d", &ngaymh);
-	printf("Baby: ", ngaybb); scanf("%d", &ngaybb);
-	printf("Hung den: ", ngayhd); scanf("%d", &ngayhd);
+	do{
+		printf("Mai Hung: ", ngaymh); scanf("%d", &ngaymh);
+		printf("Baby: ", ngaybb); scanf("%d", &ngaybb);
+		printf("Hung den: ", ngayhd); scanf("%d", &ngayhd);
+		
+		if(ngaymh > 31 || ngaybb > 31 || ngayhd > 31){
+			printf("Ban da nhap sai ngay!\n");
+		}
+	}while(ngaymh > 31 || ngaybb > 31 || ngayhd > 31);
+	
 }
-int main(){
+main(){
 
 	nhap();
 	tinh_tiendien();
-	return 0;
-	
+
 }
