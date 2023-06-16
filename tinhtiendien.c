@@ -44,13 +44,13 @@ void tinh_tiendien(){
 		tiendienhd = tongtiendien/3;
 	}
 
-	printf("Tien dien Mai Hung: %.2f\n", tiendienmh);
-	printf("Tien dien Baby: %.2f\n", tiendienbb);
-	printf("Tien dien Hung den: %.2f\n", tiendienhd);
+	printf("Tien dien Mai Hung: %g\n", tiendienmh);
+	printf("Tien dien Baby: %g\n", tiendienbb);
+	printf("Tien dien Hung den: %g\n", tiendienhd);
 	printf("\n");
-	printf("Tong tien nha Mai Hung: %.2f\n", tiendienmh + 1400000 + 200000);
-	printf("Tong tien nha Baby: %.2f\n", tiendienbb + 1400000 + 200000);
-	printf("Tong tien nha Hung den: %.2f\n", tiendienhd + 1400000 + 200000);
+	printf("Tong tien nha Mai Hung: %.0f\n", tiendienmh + 1400000 + 200000);
+	printf("Tong tien nha Baby: %.0f\n", tiendienbb + 1400000 + 200000);
+	printf("Tong tien nha Hung den: %.0f\n", tiendienhd + 1400000 + 200000);
 }
 
 void nhap(){
@@ -66,7 +66,7 @@ void nhap(){
 	printf("Thang %d co %d ngay\n", thang, ngay);
 	printf("Nhap so dien: "); scanf("%d", &sodien);
 	tongtiendien = sodien * 3500;
-	printf("Tong tien dien phai dong: %.2f VND\n", tongtiendien);
+	printf("Tong tien dien phai dong: %g VND\n", tongtiendien);
 	printf("Nhap so ngay o: \n");
 	printf("Mai Hung: ", ngaymh); scanf("%d", &ngaymh);
 	printf("Baby: ", ngaybb); scanf("%d", &ngaybb);
