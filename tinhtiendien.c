@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int ngay, ngaymh, ngaybb, ngayhd, sodien;
+int ngay, thang, ngaymh, ngaybb, ngayhd, sodien;
 float tiendien1ngay, tongtiendien, tiendienmh, tiendienbb, tiendienhd, tienthua;
+
 void tinh_tiendien(){
 
 	tiendien1ngay = tongtiendien / ngay / 3;
@@ -52,8 +53,17 @@ void tinh_tiendien(){
 	printf("Tong tien nha Hung den: %.2f\n", tiendienhd + 1400000 + 200000);
 }
 
-void xuat(){
-	printf("Nhap so ngay trong thang: "); scanf("%d", &ngay);
+void nhap(){
+	do{
+	printf("Nhap thang: "); scanf("%d", &thang);
+	if(thang == 1 || thang == 3 || thang == 5 || thang == 7 || thang == 8 || thang == 10 || thang == 12)
+			ngay = 31;
+	if(thang == 2 || thang == 4 || thang == 6 || thang == 9 || thang == 11)
+		ngay = 30;
+		if(thang < 1 || thang > 12)
+			printf("Nhap sai thang!\n");
+	}while(thang < 1 || thang > 12);
+	printf("Thang %d co %d ngay\n", thang, ngay);
 	printf("Nhap so dien: "); scanf("%d", &sodien);
 	tongtiendien = sodien * 3500;
 	printf("Tong tien dien phai dong: %.2f VND\n", tongtiendien);
@@ -64,7 +74,8 @@ void xuat(){
 }
 int main(){
 
-	xuat();
+	nhap();
 	tinh_tiendien();
 	return 0;
-	}
+	
+}
