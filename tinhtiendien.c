@@ -73,13 +73,13 @@ void nhap(){
 		printf("Baby: ", ngaybb); scanf("%d", &ngaybb);
 		printf("Hung den: ", ngayhd); scanf("%d", &ngayhd);
 		
-		if(ngaymh > 31 || ngaybb > 31 || ngayhd > 31){
+		if(ngaymh > ngay || ngaybb > ngay || ngayhd > ngay){
 			printf("Ban da nhap sai ngay!\n");
 		}
-	}while(ngaymh > 31 || ngaybb > 31 || ngayhd > 31);
+	}while(ngaymh > ngay || ngaybb > ngay || ngayhd > ngay);
 	
 }
-main(){
+int main(){
 
 	nhap();
 	tinh_tiendien();
