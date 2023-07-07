@@ -10,7 +10,6 @@ void tinh_tiendien(){
 	tiendienbb = tiendien1ngay * ngaybb;
 	tiendienhd = tiendien1ngay * ngayhd;
 	tienthua = tongtiendien - (tiendienmh + tiendienbb + tiendienhd);
-	//printf("Tien thua: %.2f\n", tienthua);
 	
 	if(ngaymh == ngay && ngaybb != ngay && ngayhd != ngay){
 		tiendienmh = tiendienmh + tienthua;
